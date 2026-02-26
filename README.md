@@ -66,7 +66,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy
-        uses: shockhs/docker-stack-deploy@v1.2
+        uses: shockhs/docker-stack-deploy@v1.3
         with:
           remote_host: ${{ secrets.REMOTE_HOST }}
           remote_user: ${{ secrets.REMOTE_USER }}
@@ -96,7 +96,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy
-        uses: shockhs/docker-stack-deploy@v1.2
+        uses: shockhs/docker-stack-deploy@v1.3
         with:
           registry: "ghcr.io"
           username: ${{ secrets.GHCR_USERNAME }}
