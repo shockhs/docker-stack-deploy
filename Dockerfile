@@ -1,4 +1,5 @@
-FROM alpinelinux/docker-cli:latest
+# Use Docker CLI 24+ for API 1.44+ (alpinelinux/docker-cli:latest is 1.43)
+FROM docker:24-cli
 
 LABEL maintainer="shockhs <esaxco.vm@gmail.com>" \
       org.label-schema.name="docker-stack-deploy" \
